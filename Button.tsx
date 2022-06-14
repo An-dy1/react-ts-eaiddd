@@ -1,6 +1,12 @@
 import * as React from 'react';
 import './style.css';
 
-export default function Button() {
-  return <button>Click Me</button>;
+// useState() results:
+// getter
+// setter
+
+// const [currentStateValue, functionToSetNewValue] = useState(initialState)
+
+export default function Button(props) {
+  return <button onClick={props.clickHandler}>+1</button>;
 }
